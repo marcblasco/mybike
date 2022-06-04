@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mybike';
+
+  constructor(private router:Router){}
+
+  Listar(){
+    this.router.navigate(["listar"]);
+  }
+  Nuevo(){
+    this.router.navigate(["add"]);
+  }
+  Signin(){
+    this.router.navigate(["signin"]);
+  }
 }
