@@ -19,6 +19,9 @@ export class AuthService {
   signInUser(user:any) {
     return this.http.post<any>(this.URL + '/signin', user);
   }
+  pruebaGit(user:any) {
+    return this.http.post<any>(this.URL + '/signin', user);
+  }
 
   loggedIn() {
     return !!localStorage.getItem('token');
